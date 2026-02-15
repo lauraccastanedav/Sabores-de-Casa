@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Recetario - Sabores de Casa</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee5b2b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221510",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            min-height: max(884px, 100dvh);
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 min-h-screen pb-24">
+    <!-- Header -->
+    <header
+        class="sticky top-0 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between border-b border-slate-200 dark:border-slate-800">
+        <a class="text-xl font-bold text-primary flex items-center gap-2" href="index.html">
+            <span class="material-icons-round text-primary">restaurant_menu</span>
+            Sabores de Casa
+        </a>
+    </header>
+    <main class="px-5 pt-6">
+        <!-- Introduction -->
+        <div class="mb-6">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Recetario Tradicional</h2>
+            <p class="text-slate-500 dark:text-slate-400 mt-1">Descubre los secretos de nuestra cocina.</p>
+        </div>
+        <!-- Categories / Filters -->
+        <div class="flex gap-3 overflow-x-auto hide-scrollbar mb-8 -mx-5 px-5">
+            <button
+                class="bg-primary text-white px-5 py-2 rounded-full text-sm font-medium flex-shrink-0 shadow-lg shadow-primary/20">Todas</button>
+            <button
+                class="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-5 py-2 rounded-full text-sm font-medium flex-shrink-0 border border-slate-200 dark:border-slate-700">Entradas</button>
+            <button
+                class="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-5 py-2 rounded-full text-sm font-medium flex-shrink-0 border border-slate-200 dark:border-slate-700">Principales</button>
+            <button
+                class="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-5 py-2 rounded-full text-sm font-medium flex-shrink-0 border border-slate-200 dark:border-slate-700">Postres</button>
+            <button
+                class="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-5 py-2 rounded-full text-sm font-medium flex-shrink-0 border border-slate-200 dark:border-slate-700">Bebidas</button>
+        </div>
+        <!-- Recipe Grid -->
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Recipe Card 1 -->
+            <div
+                class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="aspect-[4/5] relative overflow-hidden">
+                    <img alt="Asado Argentino"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        data-alt="Traditional grilled Argentinian beef on a wooden board"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFcqJXAEvNllCs-rBSdHRgWazaYIZsy52z19i3at7RrNDrGwcg2AyRoCnD9qdPh1nSc4ciwHDEv8EUokYLt93uVko3IXsK9tPPvsygMOMm37sNKl8upS1pI2_7c4DVDUgkg5oeih_uLaL2oxwxQa_nRTE8IJEM0qafSrl1oF7nnN_7RQ4nAMiHH1uVSVTqqsKX7nTOQXBSFUCkUjfn6hp6mhOYVB5eGkp7_ON9Tr30fG-A46i7J9VThumx-eLrW8SDIp4eP47W6M0" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <button class="absolute top-3 right-3 p-1.5 rounded-full bg-white/20 backdrop-blur-md text-white">
+                        <span class="material-icons-round text-sm">favorite_border</span>
+                    </button>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 class="text-white font-semibold text-sm leading-tight">Asado Criollo Tradicional</h3>
+                    <div class="flex items-center gap-1 mt-1">
+                        <span class="material-icons-round text-primary text-[10px]">schedule</span>
+                        <span class="text-[10px] text-slate-200 font-medium tracking-wide uppercase">120 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 2 -->
+            <div
+                class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="aspect-[4/5] relative overflow-hidden">
+                    <img alt="Empanadas"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        data-alt="Golden baked homemade empanadas in a rustic basket"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6-_Xoss19-2amhTkorWMQiY527X8AJJzcKZW0waDIrNiT4kHty9if6ITCcujL4d2B5Qk7m2y6d-1CQXU2ayWQ9nxTwYx1tWO4gvPTMwXJUAcRDRTh26gkou1yRZbgWP5K_q6AneShzugfXHNBFuucNelYZTdMBY3-5mFL1cm33spWNbPlwmPNkurGAyRHErmMPaOXTcncgmHPhwuiLztwuwxYtYm9yCM7F-exfr0N82jFkAe176pTGCWijPUV80dRytOBRMW5kGQ" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <button class="absolute top-3 right-3 p-1.5 rounded-full bg-primary text-white shadow-lg">
+                        <span class="material-icons-round text-sm">favorite</span>
+                    </button>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 class="text-white font-semibold text-sm leading-tight">Empanadas de la Abuela</h3>
+                    <div class="flex items-center gap-1 mt-1">
+                        <span class="material-icons-round text-primary text-[10px]">schedule</span>
+                        <span class="text-[10px] text-slate-200 font-medium tracking-wide uppercase">45 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 3 -->
+            <div
+                class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="aspect-[4/5] relative overflow-hidden">
+                    <img alt="Guiso" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        data-alt="Hearty stew in a clay pot with fresh herbs"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJddkP6b0LQ2LAfpeBDUgUlofImJ5lr_k9trJanIHh_yN9zFnYqohIATIfmXrtLxrEUvTDvlZSq23G5EaPe2RpIfQGkW3u60QtiZCyZlFaEIDEh6HM0BOhVGNySvDv5lLaKCX9504vGQnnyri5knkeCSqhzpIHUl86yRvAImkyHlFcbfeZZdI4-2MtMvtySwSNYOkJRUqlKwyo9gEMStOiPi10if61fViWxue29GUdeNxwOxSjaEU44xZSjs_AuhKOtiyt-6Kzx5k" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <button class="absolute top-3 right-3 p-1.5 rounded-full bg-white/20 backdrop-blur-md text-white">
+                        <span class="material-icons-round text-sm">favorite_border</span>
+                    </button>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 class="text-white font-semibold text-sm leading-tight">Guiso de Lentejas</h3>
+                    <div class="flex items-center gap-1 mt-1">
+                        <span class="material-icons-round text-primary text-[10px]">schedule</span>
+                        <span class="text-[10px] text-slate-200 font-medium tracking-wide uppercase">60 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 4 -->
+            <div
+                class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="aspect-[4/5] relative overflow-hidden">
+                    <img alt="Locro" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        data-alt="Traditional corn stew served in ceramic bowl"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG2TSlv604Qy2fb57kLtvdfYsYTk4Jm9dv3dxeHtgzy-qaYyyFjX1Ah_t_L1lNVjhPf4tSc1H2vYbLnex3IprmpL96S81-OLO9wZl4DeWyCyk9O23RzpiPnW4B7XmoRjWU16DD4uC04e-aJo1ooSqdV6SCnM9GQSvWSIwoyEJutBKG4p-nhyP6geGtxnWrlIHby3-MOXIpJYYDEHYrnFNxx4l14TILMzGfy__5UiE9m6Qkqmg3akP_QyJM5bjUSTZrdW9edNjD5lM" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <button class="absolute top-3 right-3 p-1.5 rounded-full bg-white/20 backdrop-blur-md text-white">
+                        <span class="material-icons-round text-sm">favorite_border</span>
+                    </button>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 class="text-white font-semibold text-sm leading-tight">Locro del 25 de Mayo</h3>
+                    <div class="flex items-center gap-1 mt-1">
+                        <span class="material-icons-round text-primary text-[10px]">schedule</span>
+                        <span class="text-[10px] text-slate-200 font-medium tracking-wide uppercase">180 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 5 -->
+            <div
+                class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="aspect-[4/5] relative overflow-hidden">
+                    <img alt="Pasta" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        data-alt="Homemade tallarines with rich tomato sauce"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIVYoJD45orMoPjdnOzXn7jxSXwFPtE4gicqW_tCeAmX35OcDJDCdXKeoJjtBOxQpBz7xFBlDwWKhstI_ex2WwGlyNewLmdxIBwHya0XOjHJjuSfxgV9EYAqJDNeLO8gPkyBr9lXnnPEppHNG8RHH3ZYZVoDEdDHYhPcpxC4C50MYSP9-8STQZE933EquVHR5rXz24vvUco1_5ebjF2yc2V_zFJ5rjzIJvMt38rl9dAVErnkVHR7PZOmDG66aP0iWb1J11GY5ccHc" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <button class="absolute top-3 right-3 p-1.5 rounded-full bg-white/20 backdrop-blur-md text-white">
+                        <span class="material-icons-round text-sm">favorite_border</span>
+                    </button>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 class="text-white font-semibold text-sm leading-tight">Tallarines al Huevo</h3>
+                    <div class="flex items-center gap-1 mt-1">
+                        <span class="material-icons-round text-primary text-[10px]">schedule</span>
+                        <span class="text-[10px] text-slate-200 font-medium tracking-wide uppercase">40 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 6 -->
+            <div
+                class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="aspect-[4/5] relative overflow-hidden">
+                    <img alt="Flan" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        data-alt="Creamy caramel custard with whipped cream"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoqJMPOlGyRADE5B2YM8TKwQka9DJR1c4u390YzS1axjV0b31l3HOsX0JoYC0GmtPU_KRdZpkzea69EdB7bpiHMmmTYSRGAj6agiN2TCmSdzHpCdyA2lHZ7m1fuvoNHKel9kAVSFFCodbjUbpCTmm3xRBXkQ2_QHZRRQqRy3cRZ5KvN9ifwlS_3EPIlygddAdKM7MTAhP7MOwtDzBHLSjsVPI8DvRCAoKGpniRMqbVHh3jhepQTGaK8W0CsNiOcm84hSw9Nvay1N8" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <button class="absolute top-3 right-3 p-1.5 rounded-full bg-primary text-white shadow-lg">
+                        <span class="material-icons-round text-sm">favorite</span>
+                    </button>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 class="text-white font-semibold text-sm leading-tight">Flan con Dulce de Leche</h3>
+                    <div class="flex items-center gap-1 mt-1">
+                        <span class="material-icons-round text-primary text-[10px]">schedule</span>
+                        <span class="text-[10px] text-slate-200 font-medium tracking-wide uppercase">30 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 7 -->
+            <div
+                class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="aspect-[4/5] relative overflow-hidden">
+                    <img alt="Milanesa" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        data-alt="Breaded veal cutlet with crispy fries"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNDomvGKdQS-t8MeFSFjWIjp7C9tyYWz2B_sHBQrNPVYqqnnfbzN12EfKYxdt5uTivlnjv9offm6KHAKeGFdhweCCIsEpgE6vf6D73u0mxCK6Z8riN46vPNoJgoV4Bm4vyszZt0tOOUDgKbid41CKjdNxYbsckMlmPvH3IlH0iLv3gyXinXNIhh82Z2ro1e86lhPHvKuvRv5jIw0jyEfk3buAukzSrNz4WkP1U4ppRs-XlNmjo28Sn1y9uGsU6CBM2gQ-RS2SlB8A" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <button class="absolute top-3 right-3 p-1.5 rounded-full bg-white/20 backdrop-blur-md text-white">
+                        <span class="material-icons-round text-sm">favorite_border</span>
+                    </button>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 class="text-white font-semibold text-sm leading-tight">Milanesa con Papas Fritas</h3>
+                    <div class="flex items-center gap-1 mt-1">
+                        <span class="material-icons-round text-primary text-[10px]">schedule</span>
+                        <span class="text-[10px] text-slate-200 font-medium tracking-wide uppercase">25 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Card 8 -->
+            <div
+                class="group relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="aspect-[4/5] relative overflow-hidden">
+                    <img alt="Pan Casero"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        data-alt="Freshly baked crusty bread loaf"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgzFMVG1SfOBdh6Bhlvni394-Ntj9YxxhBaDmMy1CJWNl7wZN4iRhPvwkr5n9yeknFgTqVjqKMswo8rYHPhXm3nsJBwl-WKZn9tKh4cJkmFrooZisFrfwiVs_OsklArmxJ84koq8x1Ul_8r7STBQHywh_7n1hJvUM1h-sdJ9J4qWhanvJyUTfhqbF426B1YpayIT6Vq4xSt3bfqhfTScT8xA86FLD4Q-Ip0h45mX46_SRYC-ycspyt690c-nyvNnKXAdjnuBhgkR8" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <button class="absolute top-3 right-3 p-1.5 rounded-full bg-white/20 backdrop-blur-md text-white">
+                        <span class="material-icons-round text-sm">favorite_border</span>
+                    </button>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <h3 class="text-white font-semibold text-sm leading-tight">Pan de Campo Casero</h3>
+                    <div class="flex items-center gap-1 mt-1">
+                        <span class="material-icons-round text-primary text-[10px]">schedule</span>
+                        <span class="text-[10px] text-slate-200 font-medium tracking-wide uppercase">90 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bottom Navigation -->
+    <nav
+        class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+        <div class="flex justify-around items-center h-16 max-w-lg mx-auto">
+            <button class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500">
+                <span class="material-icons-round text-2xl">home</span>
+                <span class="text-[10px] font-medium uppercase tracking-wider">Inicio</span>
+            </button>
+            <button class="flex flex-col items-center gap-0.5 text-primary">
+                <span class="material-icons-round text-2xl">menu_book</span>
+                <span class="text-[10px] font-medium uppercase tracking-wider">Recetas</span>
+            </button>
+            <button class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500">
+                <span class="material-icons-round text-2xl">favorite</span>
+                <span class="text-[10px] font-medium uppercase tracking-wider">Favoritos</span>
+            </button>
+            <button class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500">
+                <span class="material-icons-round text-2xl">person</span>
+                <span class="text-[10px] font-medium uppercase tracking-wider">Perfil</span>
+            </button>
+        </div>
+        <!-- iPhone indicator padding -->
+        <div class="h-6 bg-transparent"></div>
+    </nav>
+</body>
+
+</html>

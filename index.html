@@ -52,11 +52,30 @@
     <!-- iOS Top Status Bar Spacer -->
     <!-- Header / Navbar -->
     <header
-        class="sticky top-0 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
-        <a class="text-xl font-bold text-primary flex items-center gap-2" href="index.html">
-            <span class="material-icons text-primary">restaurant_menu</span>
-            Sabores de Casa
-        </a>
+        class="sticky top-0 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between border-b border-slate-200 dark:border-slate-800">
+        <div class="w-full flex justify-between">
+            <a class="text-xl font-bold text-primary flex items-center gap-2" href="index.html">
+                <span class="material-icons text-primary">restaurant_menu</span>
+                Sabores de Casa
+            </a>
+            <!-- Barra de navegacion escritorio -->
+            <nav class="hidden md:block text-slate-500/80 font-bold">
+                <ul class="flex gap-8">
+                    <li class="text-primary flex items-center gap-1">
+                        <span class="material-icons">home</span>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li class="flex flex-items gap-1">
+                        <span class="material-icons">menu_book</span>
+                        <a href="./recetario.html">Recetas</a>
+                    </li>
+                    <li class="flex flex-items gap-1">
+                        <span class="material-icons">star</span>
+                        <a href="#top-3">Top 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="pb-24">
         <!-- Hero Section -->
@@ -190,7 +209,7 @@
             <h3 class="text-xl font-bold mb-2">¿Quieres más secretos?</h3>
             <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Suscríbete para recibir recetas exclusivas y
                 noticias de nuestra gran apertura.</p>
-            <div class="flex flex-col gap-3">
+            <div class="flex justify-center">
                 <div title="saboresdecasa.newsletter.com" class="line-clamp-2 p-4 bg-primary rounded-2xl text-white">
                     <p>saboresdecasa.newsletter.com</p>
                 </div>
@@ -199,13 +218,14 @@
     </main>
     <!-- Navigation Tab Bar (iOS Style) -->
     <nav
-        class="fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-t border-slate-200 dark:border-stone-800 px-6 py-3 pb-8 z-50">
+        class="block md:hidden fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-t border-slate-200 dark:border-stone-800 px-6 py-3 pb-8 z-50">
         <div class="max-w-md mx-auto flex justify-between items-center">
             <a class="flex flex-col items-center gap-1 group" href="index.html">
                 <span class="material-icons text-primary">home</span>
                 <span class="text-[10px] font-semibold text-primary uppercase tracking-tighter">Inicio</span>
             </a>
-            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#">
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500"
+                href="./recetario.html">
                 <span class="material-icons">menu_book</span>
                 <span class="text-[10px] font-semibold uppercase tracking-tighter">Recetas</span>
             </a>
@@ -217,7 +237,7 @@
     </nav>
     <!-- iOS Home Indicator Overlay (Visual only) -->
     <div
-        class="fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-slate-300 dark:bg-stone-700 rounded-full z-[60] opacity-50">
+        class="visible md:invisible fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-slate-300 dark:bg-stone-700 rounded-full z-[60] opacity-50">
     </div>
 </body>
 
