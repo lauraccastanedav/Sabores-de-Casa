@@ -42,10 +42,6 @@
         body {
             -webkit-tap-highlight-color: transparent;
             font-family: 'Work Sans', sans-serif;
-        }
-    </style>
-    <style>
-        body {
             min-height: max(884px, 100dvh);
         }
     </style>
@@ -54,22 +50,13 @@
 <body
     class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display transition-colors duration-300">
     <!-- iOS Top Status Bar Spacer -->
-    <div class="h-12 w-full bg-background-light dark:bg-background-dark sticky top-0 z-50"></div>
     <!-- Header / Navbar -->
     <header
-        class="sticky top-12 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
+        class="sticky top-0 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
         <a class="text-xl font-bold text-primary flex items-center gap-2" href="index.html">
             <span class="material-icons text-primary">restaurant_menu</span>
             Sabores de Casa
         </a>
-        <div class="flex items-center gap-4">
-            <button class="p-2 rounded-full hover:bg-primary/10 transition-colors">
-                <span class="material-icons text-primary">search</span>
-            </button>
-            <button class="p-2 rounded-full hover:bg-primary/10 transition-colors">
-                <span class="material-icons text-primary">menu</span>
-            </button>
-        </div>
     </header>
     <main class="pb-24">
         <!-- Hero Section -->
@@ -118,7 +105,7 @@
         <!-- Top 3 Recipes Section -->
         <section class="px-4">
             <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold text-slate-900 dark:text-white">Top 3 del Mes</h2>
+                <h2 id="top-3" class="text-xl font-bold text-slate-900 dark:text-white">Top 3 del Mes</h2>
                 <a class="text-primary text-sm font-semibold flex items-center" href="#">
                     Ver todas <span class="material-icons text-sm">chevron_right</span>
                 </a>
@@ -205,11 +192,9 @@
             <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Suscríbete para recibir recetas exclusivas y
                 noticias de nuestra gran apertura.</p>
             <div class="flex flex-col gap-3">
-                <input
-                    class="bg-white dark:bg-background-dark border-olive/20 rounded-lg px-4 py-3 text-sm focus:ring-primary focus:border-primary"
-                    placeholder="Tu correo electrónico" type="email" />
-                <button
-                    class="bg-primary text-white font-bold py-3 rounded-lg shadow-lg shadow-primary/20">Suscribirme</button>
+                <div title="saboresdecasa.newsletter.com" class="p-4 line-clamp-2  bg-primary rounded-2xl text-white">
+                    <p>saboresdecasa.newsletter.com</p>
+                </div>
             </div>
         </section>
     </main>
@@ -225,13 +210,9 @@
                 <span class="material-icons">menu_book</span>
                 <span class="text-[10px] font-semibold uppercase tracking-tighter">Recetas</span>
             </a>
-            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#">
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#top-3">
                 <span class="material-icons">star</span>
                 <span class="text-[10px] font-semibold uppercase tracking-tighter">Top 3</span>
-            </a>
-            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#">
-                <span class="material-icons">person</span>
-                <span class="text-[10px] font-semibold uppercase tracking-tighter">Perfil</span>
             </a>
         </div>
     </nav>
