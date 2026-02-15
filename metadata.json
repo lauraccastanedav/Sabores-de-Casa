@@ -1,8 +1,0 @@
-{
-  "name": "Copy of Sabores de Casa",
-  "description": "Una aplicación de recetas tradicionales que preserva el legado de la cocina casera con una interfaz moderna y elegante.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
-}

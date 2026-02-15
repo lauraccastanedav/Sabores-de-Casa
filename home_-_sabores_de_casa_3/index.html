@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <title>Home - Sabores de Casa</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee5b2b",
+                        "background-light": "#fdfaf5",
+                        "background-dark": "#221510",
+                        "olive": "#6b705c",
+                        "cream": "#fdfaf5"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            -webkit-tap-highlight-color: transparent;
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display transition-colors duration-300">
+    <!-- iOS Top Status Bar Spacer -->
+    <div class="h-12 w-full bg-background-light dark:bg-background-dark sticky top-0 z-50"></div>
+    <!-- Header / Navbar -->
+    <header
+        class="sticky top-12 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
+        <a class="text-xl font-bold text-primary flex items-center gap-2" href="index.html">
+            <span class="material-icons text-primary">restaurant_menu</span>
+            Sabores de Casa
+        </a>
+        <div class="flex items-center gap-4">
+            <button class="p-2 rounded-full hover:bg-primary/10 transition-colors">
+                <span class="material-icons text-primary">search</span>
+            </button>
+            <button class="p-2 rounded-full hover:bg-primary/10 transition-colors">
+                <span class="material-icons text-primary">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="pb-24">
+        <!-- Hero Section -->
+        <section class="relative h-64 w-full overflow-hidden mb-8">
+            <img alt="Kitchen Interior" class="absolute inset-0 w-full h-full object-cover"
+                data-alt="Rustic kitchen with traditional cooking utensils"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEBvUFDHAKn3j5Zif9q1dl2GbFUtrM4V3rW2LV5-7U25pdiulTasm7BTrAcqHoeN1raubYpMl2VnQU8zrop1_puDJJcptQ5dC7sSiyrsAONGwQNhQj1rFP9rI2Jo6rTJ4z-rpZxfAQzgGsD078yueT2wIonJfvyg46IJuPBAiDkCK4CMNEHP2GpFaQHvikdvFrnsFgZQBqk1uTqXi36ti78abEZ8aFaZe6-X380V1u_yA8um3n2Rb0fJMscWC4H6a0SbWTM2F3Hfc" />
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-background-light dark:from-background-dark via-transparent to-transparent">
+            </div>
+            <div class="absolute bottom-0 left-0 p-6 w-full">
+                <h1 class="text-3xl font-bold mb-2 text-slate-900 dark:text-white leading-tight">Bienvenido a nuestra
+                    cocina digital</h1>
+                <p class="text-sm text-slate-600 dark:text-slate-300 max-w-xs">Preservando el legado de los sabores
+                    tradicionales que nos hacen sentir en casa.</p>
+            </div>
+        </section>
+        <!-- Opening Banner -->
+        <div class="mx-4 mb-8">
+            <div
+                class="bg-primary rounded-xl p-6 text-white shadow-lg shadow-primary/20 flex items-center justify-between overflow-hidden relative">
+                <div class="relative z-10">
+                    <span class="text-xs font-semibold tracking-widest uppercase opacity-80 block mb-1">Inauguración
+                        Especial</span>
+                    <h2 class="text-2xl font-bold">Próxima apertura</h2>
+                    <p class="text-lg opacity-90">14 de febrero</p>
+                </div>
+                <div class="material-icons text-7xl opacity-20 absolute -right-2 top-2 rotate-12">calendar_today</div>
+            </div>
+        </div>
+        <!-- Features Grid -->
+        <section class="px-4 mb-10">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white dark:bg-stone-800/50 p-4 rounded-xl border border-primary/5">
+                    <span class="material-icons text-primary mb-2">auto_stories</span>
+                    <h3 class="font-bold text-sm">Recetario Digital</h3>
+                    <p class="text-xs text-slate-500 mt-1">Todas las recetas de la abuela en un solo lugar.</p>
+                </div>
+                <div class="bg-white dark:bg-stone-800/50 p-4 rounded-xl border border-primary/5">
+                    <span class="material-icons text-primary mb-2">history_edu</span>
+                    <h3 class="font-bold text-sm">Historia Viva</h3>
+                    <p class="text-xs text-slate-500 mt-1">Conoce el origen de cada ingrediente local.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Top 3 Recipes Section -->
+        <section class="px-4">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-bold text-slate-900 dark:text-white">Top 3 del Mes</h2>
+                <a class="text-primary text-sm font-semibold flex items-center" href="#">
+                    Ver todas <span class="material-icons text-sm">chevron_right</span>
+                </a>
+            </div>
+            <div class="space-y-6">
+                <!-- Recipe 1 -->
+                <div
+                    class="flex flex-col rounded-xl overflow-hidden bg-white dark:bg-stone-800/40 border border-primary/5 shadow-sm">
+                    <div class="relative h-48">
+                        <img alt="Traditional Stew" class="w-full h-full object-cover"
+                            data-alt="Hearty traditional meat stew in ceramic bowl"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl99MPfNnxdSb0RddapOlte9LuWd9GAH33UG7SJSgyiU3ntTG7XFP_Vj0VguUghnfixfhjdbrNhRx8Hkd2KWWHQXn4_keuDsjpEJuHUbryTUE-VS5vZXuRrsqcLo_BI-dQKrFxXol_tHPMijIhJ-s76XsStKhgyNNWflMstURaRdCWDTLfHuXd0Hxlu77yyXEQ_VyWynS6rMmoFcEam8LgpIY2vwOMpNMwrYaIWYJE61F2pTQO34XCr4da3vJXy-qhG8xIFbTxrX4" />
+                        <div
+                            class="absolute top-4 left-4 bg-olive text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                            Más Popular
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">Guiso de la Sierra</h3>
+                        <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-2">
+                            <span class="flex items-center gap-1"><span class="material-icons text-sm">timer</span> 45
+                                min</span>
+                            <span class="flex items-center gap-1"><span class="material-icons text-sm">equalizer</span>
+                                Fácil</span>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-2">Una receta que ha pasado de
+                            generación en generación, usando hierbas frescas de nuestro huerto.</p>
+                    </div>
+                </div>
+                <!-- Recipe 2 -->
+                <div
+                    class="flex flex-col rounded-xl overflow-hidden bg-white dark:bg-stone-800/40 border border-primary/5 shadow-sm">
+                    <div class="relative h-48">
+                        <img alt="Traditional Bread" class="w-full h-full object-cover"
+                            data-alt="Freshly baked artisanal bread with rosemary"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-3Ophmn_AgIgLTU2IJ6H1py_E2GveWBvRJXFgw0zODhNQ7AOdYppywr1P2jETPmz8OH2Bt-Q8CyB0JqjOsqIDw0ZnSzyq1XU7imSOspS2ga4-PLZOBuJiCGm4ql3KhqLbm6f67QqzBx2vC4VkFdM6G6i3bnZLN6lSk6Uqoy0GwNP29gF0XrG355nr425z4MI0a9freGjliDJb56XgKiiWCI_yridd-NXBrqf8U9CPQ4lWAl7icmclMKyrL3ndu-muN20hIs2gJoI" />
+                        <div
+                            class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                            Recomendado
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">Pan Artesanal de Leña</h3>
+                        <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-2">
+                            <span class="flex items-center gap-1"><span class="material-icons text-sm">timer</span> 2h
+                                30 min</span>
+                            <span class="flex items-center gap-1"><span class="material-icons text-sm">equalizer</span>
+                                Media</span>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-2">El secreto está en la
+                            fermentación lenta y el toque ahumado del horno tradicional.</p>
+                    </div>
+                </div>
+                <!-- Recipe 3 -->
+                <div
+                    class="flex flex-col rounded-xl overflow-hidden bg-white dark:bg-stone-800/40 border border-primary/5 shadow-sm">
+                    <div class="relative h-48">
+                        <img alt="Traditional Dessert" class="w-full h-full object-cover"
+                            data-alt="Sweet rice pudding with cinnamon sprinkle"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9kYW0CB8XWhVegq09dliaQTmsQULsTLSegKBn9aTJ8QZ4d0SpBH6NkzdcycBxXe2nquSSUXYV1yW-6Mgug5LDDVYMczs1hpz4Y1V57Ulvp0hPO9V45mqb47AFoKvYTsEmrxdJTPEKpwxRMuwaPnXurzdKcpzv3VX7SYpRtLhg3r7NRGq0wny3QmFaG9t3W7GX2kbDAf9uQCaGntjAyYNlJWmlua6S2_NDqHKIoSzZT5Udjum1kbQnLnctJ53Lhi6MBRj7RrfVv4o" />
+                        <div
+                            class="absolute top-4 left-4 bg-olive text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                            Clásico
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-1">Arroz con Leche Cremoso</h3>
+                        <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-2">
+                            <span class="flex items-center gap-1"><span class="material-icons text-sm">timer</span> 35
+                                min</span>
+                            <span class="flex items-center gap-1"><span class="material-icons text-sm">equalizer</span>
+                                Muy Fácil</span>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-2">Dulce, suave y con ese toque
+                            inconfundible de canela que te transporta a tu infancia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter / Footer Callout -->
+        <section class="mt-12 mx-4 p-8 bg-olive/10 dark:bg-olive/20 rounded-2xl text-center border border-olive/10">
+            <span class="material-icons text-olive text-4xl mb-3">local_florist</span>
+            <h3 class="text-xl font-bold mb-2">¿Quieres más secretos?</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Suscríbete para recibir recetas exclusivas y
+                noticias de nuestra gran apertura.</p>
+            <div class="flex flex-col gap-3">
+                <input
+                    class="bg-white dark:bg-background-dark border-olive/20 rounded-lg px-4 py-3 text-sm focus:ring-primary focus:border-primary"
+                    placeholder="Tu correo electrónico" type="email" />
+                <button
+                    class="bg-primary text-white font-bold py-3 rounded-lg shadow-lg shadow-primary/20">Suscribirme</button>
+            </div>
+        </section>
+    </main>
+    <!-- Navigation Tab Bar (iOS Style) -->
+    <nav
+        class="fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-t border-slate-200 dark:border-stone-800 px-6 py-3 pb-8 z-50">
+        <div class="max-w-md mx-auto flex justify-between items-center">
+            <a class="flex flex-col items-center gap-1 group" href="index.html">
+                <span class="material-icons text-primary">home</span>
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-tighter">Inicio</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#">
+                <span class="material-icons">menu_book</span>
+                <span class="text-[10px] font-semibold uppercase tracking-tighter">Recetas</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#">
+                <span class="material-icons">star</span>
+                <span class="text-[10px] font-semibold uppercase tracking-tighter">Top 3</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#">
+                <span class="material-icons">person</span>
+                <span class="text-[10px] font-semibold uppercase tracking-tighter">Perfil</span>
+            </a>
+        </div>
+    </nav>
+    <!-- iOS Home Indicator Overlay (Visual only) -->
+    <div
+        class="fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-slate-300 dark:bg-stone-700 rounded-full z-[60] opacity-50">
+    </div>
+</body>
+
+</html>

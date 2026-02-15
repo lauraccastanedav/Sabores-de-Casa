@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Wireframe Low-Fi: Inicio - Sabores de Casa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "wire-bg": "#ffffff",
+                        "wire-gray-light": "#f3f4f6",
+                        "wire-gray-medium": "#d1d5db",
+                        "wire-gray-dark": "#9ca3af",
+                        "wire-border": "#e5e7eb"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            -webkit-tap-highlight-color: transparent;
+            font-family: 'Work Sans', sans-serif;
+            background-color: theme('colors.wire-bg');
+        }
+        .placeholder-x {
+            position: relative;
+        }
+        .placeholder-x::before, .placeholder-x::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to top left, transparent calc(50% - 1px), #d1d5db 50%, transparent calc(50% + 1px)),
+                        linear-gradient(to top right, transparent calc(50% - 1px), #d1d5db 50%, transparent calc(50% + 1px));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-wire-gray-dark font-display">
+<div class="h-12 w-full bg-white sticky top-0 z-50"></div>
+<header class="sticky top-12 z-40 bg-white border-b border-wire-border px-4 py-3 flex items-center justify-between">
+<div class="w-32 h-8 bg-wire-gray-medium rounded border border-wire-gray-dark flex items-center justify-center">
+<span class="text-[10px] font-bold text-white uppercase">Logo</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-wire-gray-light flex items-center justify-center border border-wire-border">
+<span class="material-symbols-outlined text-wire-gray-dark text-xl">search</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-wire-gray-light flex items-center justify-center border border-wire-border">
+<span class="material-symbols-outlined text-wire-gray-dark text-xl">menu</span>
+</div>
+</div>
+</header>
+<main class="pb-24">
+<section class="px-4 mt-4">
+<div class="w-full h-48 bg-wire-gray-light border-2 border-dashed border-wire-gray-medium rounded-xl flex flex-col items-center justify-center p-6 text-center">
+<h1 class="text-xl font-bold text-wire-gray-dark mb-2">Bienvenido a nuestra cocina digital</h1>
+<div class="w-3/4 h-2 bg-wire-gray-medium rounded mb-1 mx-auto"></div>
+<div class="w-1/2 h-2 bg-wire-gray-medium rounded mx-auto"></div>
+</div>
+</section>
+<div class="mx-4 mt-6">
+<div class="bg-wire-gray-medium rounded-xl p-6 flex items-center justify-between border border-wire-gray-dark">
+<div class="flex-1">
+<div class="w-20 h-2 bg-wire-gray-dark opacity-50 mb-2"></div>
+<h2 class="text-lg font-bold text-wire-gray-dark">Próxima apertura</h2>
+<div class="w-24 h-4 bg-wire-gray-dark opacity-50 mt-1"></div>
+</div>
+<div class="w-12 h-12 bg-white/30 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-wire-gray-dark">calendar_today</span>
+</div>
+</div>
+</div>
+<section class="px-4 mt-8">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-wire-bg border border-wire-border p-4 rounded-xl">
+<div class="w-8 h-8 bg-wire-gray-light rounded mb-3"></div>
+<div class="w-full h-3 bg-wire-gray-medium rounded mb-2"></div>
+<div class="w-2/3 h-2 bg-wire-gray-light rounded"></div>
+</div>
+<div class="bg-wire-bg border border-wire-border p-4 rounded-xl">
+<div class="w-8 h-8 bg-wire-gray-light rounded mb-3"></div>
+<div class="w-full h-3 bg-wire-gray-medium rounded mb-2"></div>
+<div class="w-2/3 h-2 bg-wire-gray-light rounded"></div>
+</div>
+</div>
+</section>
+<section class="px-4 mt-10">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-lg font-bold text-wire-gray-dark">Top 3 del Mes</h2>
+<div class="w-16 h-4 bg-wire-gray-light rounded"></div>
+</div>
+<div class="space-y-6">
+<div class="rounded-xl overflow-hidden border border-wire-border bg-white">
+<div class="h-40 bg-wire-gray-light placeholder-x"></div>
+<div class="p-4">
+<div class="w-3/4 h-4 bg-wire-gray-medium rounded mb-3"></div>
+<div class="flex gap-4 mb-3">
+<div class="w-12 h-2 bg-wire-gray-light rounded"></div>
+<div class="w-12 h-2 bg-wire-gray-light rounded"></div>
+</div>
+<div class="w-full h-2 bg-wire-gray-light rounded mb-1"></div>
+<div class="w-2/3 h-2 bg-wire-gray-light rounded"></div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden border border-wire-border bg-white">
+<div class="h-40 bg-wire-gray-light placeholder-x"></div>
+<div class="p-4">
+<div class="w-3/4 h-4 bg-wire-gray-medium rounded mb-3"></div>
+<div class="flex gap-4 mb-3">
+<div class="w-12 h-2 bg-wire-gray-light rounded"></div>
+<div class="w-12 h-2 bg-wire-gray-light rounded"></div>
+</div>
+<div class="w-full h-2 bg-wire-gray-light rounded mb-1"></div>
+<div class="w-2/3 h-2 bg-wire-gray-light rounded"></div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden border border-wire-border bg-white">
+<div class="h-40 bg-wire-gray-light placeholder-x"></div>
+<div class="p-4">
+<div class="w-3/4 h-4 bg-wire-gray-medium rounded mb-3"></div>
+<div class="flex gap-4 mb-3">
+<div class="w-12 h-2 bg-wire-gray-light rounded"></div>
+<div class="w-12 h-2 bg-wire-gray-light rounded"></div>
+</div>
+<div class="w-full h-2 bg-wire-gray-light rounded mb-1"></div>
+<div class="w-2/3 h-2 bg-wire-gray-light rounded"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-12 mx-4 p-8 border border-wire-border bg-wire-gray-light rounded-2xl text-center">
+<div class="w-12 h-12 bg-wire-gray-medium rounded-full mx-auto mb-4"></div>
+<div class="w-3/4 h-4 bg-wire-gray-medium rounded mx-auto mb-2"></div>
+<div class="w-full h-2 bg-wire-gray-medium/50 rounded mx-auto mb-6"></div>
+<div class="space-y-3">
+<div class="w-full h-10 bg-white border border-wire-border rounded-lg"></div>
+<div class="w-full h-10 bg-wire-gray-dark rounded-lg"></div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-wire-border px-6 py-3 pb-8 z-50">
+<div class="max-w-md mx-auto flex justify-between items-center">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-wire-gray-dark">home</span>
+<div class="w-8 h-1.5 bg-wire-gray-dark rounded"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-wire-gray-medium">menu_book</span>
+<div class="w-8 h-1.5 bg-wire-gray-light rounded"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-wire-gray-medium">star</span>
+<div class="w-8 h-1.5 bg-wire-gray-light rounded"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-wire-gray-medium">person</span>
+<div class="w-8 h-1.5 bg-wire-gray-light rounded"></div>
+</div>
+</div>
+</nav>
+<div class="fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-wire-gray-medium rounded-full z-[60]"></div>
+
+</body></html>
