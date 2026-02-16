@@ -54,8 +54,7 @@
     </style>
 </head>
 
-<body
-    class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 min-h-screen pb-24">
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 min-h-screen">
     <!-- Header -->
     <header
         class="sticky top-0 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between border-b border-slate-200 dark:border-slate-800">
@@ -64,7 +63,7 @@
             Sabores de Casa
         </a>
     </header>
-    <main class="px-5 pt-6">
+    <main class="px-5 pt-6 pb-24 bg-white">
         <!-- Introduction -->
         <div class="mb-6">
             <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Recetario Tradicional</h2>
@@ -250,30 +249,81 @@
             </div>
         </div>
     </main>
-    <!-- Bottom Navigation -->
+
+    <!-- Navigation Tab Bar (iOS Style) -->
     <nav
-        class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
-        <div class="flex justify-around items-center h-16 max-w-lg mx-auto">
-            <button class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500">
-                <span class="material-icons-round text-2xl">home</span>
-                <span class="text-[10px] font-medium uppercase tracking-wider">Inicio</span>
-            </button>
-            <button class="flex flex-col items-center gap-0.5 text-primary">
-                <span class="material-icons-round text-2xl">menu_book</span>
-                <span class="text-[10px] font-medium uppercase tracking-wider">Recetas</span>
-            </button>
-            <button class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500">
-                <span class="material-icons-round text-2xl">favorite</span>
-                <span class="text-[10px] font-medium uppercase tracking-wider">Favoritos</span>
-            </button>
-            <button class="flex flex-col items-center gap-0.5 text-slate-400 dark:text-slate-500">
-                <span class="material-icons-round text-2xl">person</span>
-                <span class="text-[10px] font-medium uppercase tracking-wider">Perfil</span>
-            </button>
+        class="block md:hidden fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-t border-slate-200 dark:border-stone-800 px-6 py-3 pb-8 z-50">
+        <div class="max-w-md mx-auto flex justify-between items-center">
+            <a class="flex flex-col items-center gap-1 group" href="index.html">
+                <span class="material-icons-round text-primary">home</span>
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-tighter">Inicio</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500"
+                href="./recetario.html">
+                <span class="material-icons-round">menu_book</span>
+                <span class="text-[10px] font-semibold uppercase tracking-tighter">Recetas</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#top-3">
+                <span class="material-icons-round">star</span>
+                <span class="text-[10px] font-semibold uppercase tracking-tighter">Top 3</span>
+            </a>
         </div>
-        <!-- iPhone indicator padding -->
-        <div class="h-6 bg-transparent"></div>
     </nav>
+    <!-- iOS Home Indicator Overlay (Visual only) -->
+    <div
+        class="visible md:invisible fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-slate-300 dark:bg-stone-700 rounded-full z-[60] opacity-50">
+    </div>
+
+    <footer class="w-full p-[2rem] text-slate-500  bg-olive/10 border border-solid border-olive/10">
+        <div class="pb-[5rem] md:pb-0 flex flex-col gap-8">
+            <div>
+                <a class="text-xl font-bold text-primary flex items-center gap-2" href="index.html">
+                    <span class="material-icons-round text-primary">restaurant_menu</span>
+                    Sabores de Casa
+                </a>
+            </div>
+
+            <article class="md:flex justify-evenly">
+                <!-- Seccion de contacto -->
+                <section>
+                    <h5 class="text-primary text-xl">Contacto</h5>
+                    <ul class="pl-8 list-disc line-clamp-3">
+                        <li>
+                            <a href="#">contacto@saboresdecasa.com</a>
+                        </li>
+                        <li>
+                            <a href="#">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="#">+34 621 81 28 72</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Seccion de recetas populares -->
+                <section>
+                    <h5 class="text-primary text-xl">Recetas Populares</h5>
+                    <ul class="pl-8 list-disc line-clamp-3">
+                        <li>
+                            <a href="#">Guiso de la Sierra</a>
+                        </li>
+                        <li>
+                            <a href="#">Pan Artesanal de Leña</a>
+                        </li>
+                        <li>
+                            <a href="#">Arroz con Leche Cremoso</a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <div>
+                <p class="text-sm text-center text-slate-500">
+                    Todos los derechos reservados | Restaurante Sabores de Casa.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
