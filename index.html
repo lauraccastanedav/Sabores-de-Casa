@@ -67,11 +67,11 @@
                     </li>
                     <li class="flex flex-items gap-1">
                         <span class="material-icons">menu_book</span>
-                        <a href="./recetario.html">Recetas</a>
+                        <a href="./menu.html">Menú</a>
                     </li>
                     <li class="flex flex-items gap-1">
                         <span class="material-icons">star</span>
-                        <a href="#top-3">Top 3</a>
+                        <a href="./index.html#top-3">Top 3</a>
                     </li>
                 </ul>
             </nav>
@@ -94,18 +94,22 @@
             </div>
         </section>
         <!-- Opening Banner -->
-        <div class="md:max-w-[35%] mx-4 mb-8">
-            <div
-                class="bg-primary rounded-xl p-6 text-white shadow-lg shadow-primary/20 flex items-center justify-between overflow-hidden relative">
-                <div class="relative z-10">
-                    <span class="text-xs font-semibold tracking-widest uppercase opacity-80 block mb-1">Inauguración
-                        Especial</span>
-                    <h2 class="text-2xl font-bold">Próxima apertura</h2>
-                    <p class="text-lg opacity-90">14 de febrero</p>
+        <section class="px-4">
+            <div class="md:max-w-[35%] mb-8">
+                <div
+                    class="bg-primary rounded-xl p-6 text-white shadow-lg shadow-primary/20 flex items-center justify-between overflow-hidden relative">
+                    <div class="relative z-10">
+                        <span class="text-xs font-semibold tracking-widest uppercase opacity-80 block mb-1">Inauguración
+                            Especial</span>
+                        <h2 class="text-2xl font-bold">Próxima apertura</h2>
+                        <p class="text-lg opacity-90">14 de febrero</p>
+                    </div>
+                    <div class="material-icons text-7xl opacity-20 absolute -right-2 top-2 rotate-12">calendar_today
+                    </div>
                 </div>
-                <div class="material-icons text-7xl opacity-20 absolute -right-2 top-2 rotate-12">calendar_today</div>
             </div>
-        </div>
+        </section>
+
         <!-- Features Grid -->
         <section class="px-4 mb-10">
             <div class="grid grid-cols-2 gap-4">
@@ -121,11 +125,12 @@
                 </div>
             </div>
         </section>
+
         <!-- Top 3 Recipes Section -->
         <section class="px-4">
             <div class="flex items-center justify-between mb-4">
                 <h2 id="top-3" class="text-xl font-bold text-slate-900 dark:text-white">Top 3 del Mes</h2>
-                <a class="text-primary text-sm font-semibold flex items-center" href="./recetario.html">
+                <a class="text-primary text-sm font-semibold flex items-center" href="./menu.html">
                     Ver todas <span class="material-icons text-sm">chevron_right</span>
                 </a>
             </div>
@@ -224,12 +229,12 @@
                 <span class="material-icons text-primary">home</span>
                 <span class="text-[10px] font-semibold text-primary uppercase tracking-tighter">Inicio</span>
             </a>
-            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500"
-                href="./recetario.html">
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="./menu.html">
                 <span class="material-icons">menu_book</span>
                 <span class="text-[10px] font-semibold uppercase tracking-tighter">Recetas</span>
             </a>
-            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="#top-3">
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500"
+                href="./index.html#top-3">
                 <span class="material-icons">star</span>
                 <span class="text-[10px] font-semibold uppercase tracking-tighter">Top 3</span>
             </a>
@@ -249,11 +254,11 @@
                 </a>
             </div>
 
-            <article class="md:flex justify-evenly">
+            <article class="flex md:justify-evenly md:flex-row flex-col gap-4">
                 <!-- Seccion de contacto -->
                 <section>
-                    <h5 class="text-primary text-xl">Contacto</h5>
-                    <ul class="pl-8 list-disc line-clamp-3">
+                    <h5 class="text-primary text-xl font-bold">Contacto</h5>
+                    <ul class="pl-8 text-sm  list-disc line-clamp-3">
                         <li>
                             <a href="#">contacto@saboresdecasa.com</a>
                         </li>
@@ -268,8 +273,8 @@
 
                 <!-- Seccion de recetas populares -->
                 <section>
-                    <h5 class="text-primary text-xl">Recetas Populares</h5>
-                    <ul class="pl-8 list-disc line-clamp-3">
+                    <h5 class="text-primary text-xl font-bold">Recetas Populares</h5>
+                    <ul class="text-sm pl-8 list-disc line-clamp-3">
                         <li>
                             <a href="#">Guiso de la Sierra</a>
                         </li>
