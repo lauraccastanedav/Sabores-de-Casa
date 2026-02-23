@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Receta: Lentejas Tradicionales - Sabores de Casa</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee5b2b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221510",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 antialiased">
+    <header
+        class="sticky top-0 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between border-b border-slate-200 dark:border-slate-800">
+        <div class="w-full flex justify-between">
+            <a class="text-xl font-bold text-primary flex items-center gap-2" href="index.html">
+                <span class="material-icons text-primary">restaurant_menu</span>
+                Sabores de Casa
+            </a>
+            <!-- Barra de navegacion escritorio -->
+            <nav class="hidden md:block text-slate-500/80 font-bold">
+                <ul class="flex gap-8">
+                    <li class="text-primary flex items-center gap-1">
+                        <span class="material-icons">home</span>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li class="flex flex-items gap-1">
+                        <span class="material-icons">menu_book</span>
+                        <a href="./menu.html">Menú</a>
+                    </li>
+                    <li class="flex flex-items gap-1">
+                        <span class="material-icons">star</span>
+                        <a href="./index.html#top-3">Top 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section / Background Image for Mobile -->
+    <div class="relative h-[60vh] w-full overflow-hidden">
+        <img alt="Lentejas Tradicionales" class="absolute inset-0 w-full h-full object-cover"
+            data-alt="Traditional lentil soup with chorizo and vegetables"
+            src="./imgs/lentejas.jpg" alt="">" />
+        <!-- Gradient Overlay -->
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-background-light dark:to-background-dark">
+        </div>
+        <!-- Top Navigation -->
+        <div class="absolute top-0 left-0 right-0 p-6 flex justify-between items-center z-10">
+            <button
+                class="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full text-white">
+                <span class="material-icons">arrow_back_ios_new</span>
+            </button>
+            <div class="flex gap-2">
+                <button
+                    class="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full text-white">
+                    <span class="material-icons">share</span>
+                </button>
+                <button
+                    class="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full text-white">
+                    <span class="material-icons">favorite_border</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Content Container -->
+    <div class="relative -mt-20 px-4 pb-12 z-20">
+        <!-- Title Card -->
+        <div class="max-w-[100%] md:max-w-[60%] bg-white dark:bg-slate-900 rounded-xl p-6 shadow-xl mb-6">
+            <div class="mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-primary">Sabores de Casa</span>
+                <h1 class="text-3xl font-bold mt-1 text-slate-900 dark:text-white">Lentejas Tradicionales</h1>
+            </div>
+            <div class="flex justify-between items-center pt-4 border-t border-slate-100 dark:border-slate-800">
+                <div class="flex flex-col items-center">
+                    <span class="material-icons text-primary mb-1">schedule</span>
+                    <span class="text-sm font-medium">45 min</span>
+                    <span class="text-[10px] text-slate-500 uppercase">Tiempo</span>
+                </div>
+                <div class="flex flex-col items-center border-x border-slate-100 dark:border-slate-800 px-8">
+                    <span class="material-icons text-primary mb-1">group</span>
+                    <span class="text-sm font-medium">4 pers</span>
+                    <span class="text-[10px] text-slate-500 uppercase">Raciones</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-icons text-primary mb-1">restaurant</span>
+                    <span class="text-sm font-medium">Fácil</span>
+                    <span class="text-[10px] text-slate-500 uppercase">Nivel</span>
+                </div>
+            </div>
+        </div>
+        <!-- Ingredients Section -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <span class="w-8 h-8 bg-primary/20 text-primary rounded-lg flex items-center justify-center mr-3">
+                    <span class="material-icons text-sm">shopping_basket</span>
+                </span>
+                Ingredientes
+            </h2>
+            <div class="bg-white dark:bg-slate-900 rounded-xl p-4 shadow-sm space-y-3">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input class="form-checkbox h-5 w-5 text-primary border-slate-300 rounded-full focus:ring-primary"
+                        type="checkbox" />
+                    <span class="text-slate-700 dark:text-slate-300">300g de Lentejas pardinas</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input class="form-checkbox h-5 w-5 text-primary border-slate-300 rounded-full focus:ring-primary"
+                        type="checkbox" />
+                    <span class="text-slate-700 dark:text-slate-300">1 Chorizo asturiano troceado</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input class="form-checkbox h-5 w-5 text-primary border-slate-300 rounded-full focus:ring-primary"
+                        type="checkbox" />
+                    <span class="text-slate-700 dark:text-slate-300">1 Cebolla blanca picada</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input class="form-checkbox h-5 w-5 text-primary border-slate-300 rounded-full focus:ring-primary"
+                        type="checkbox" />
+                    <span class="text-slate-700 dark:text-slate-300">2 Zanahorias en rodajas</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input class="form-checkbox h-5 w-5 text-primary border-slate-300 rounded-full focus:ring-primary"
+                        type="checkbox" />
+                    <span class="text-slate-700 dark:text-slate-300">1 Hoja de laurel</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input class="form-checkbox h-5 w-5 text-primary border-slate-300 rounded-full focus:ring-primary"
+                        type="checkbox" />
+                    <span class="text-slate-700 dark:text-slate-300">Pimentón dulce y sal al gusto</span>
+                </label>
+            </div>
+        </div>
+        <!-- Preparation Steps Section -->
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-6 flex items-center">
+                <span class="w-8 h-8 bg-primary/20 text-primary rounded-lg flex items-center justify-center mr-3">
+                    <span class="material-icons text-sm">auto_stories</span>
+                </span>
+                Preparación
+            </h2>
+            <div
+                class="space-y-8 relative before:absolute before:left-4 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-200 dark:before:bg-slate-800">
+                <!-- Step 1 -->
+                <div class="relative pl-10">
+                    <div
+                        class="absolute left-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">
+                        1</div>
+                    <h3 class="font-bold text-lg mb-2">Sofrito Inicial</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        En una olla grande, añade un chorrito de aceite de oliva y sofríe la cebolla, el ajo y las
+                        zanahorias hasta que estén tiernas.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative pl-10">
+                    <div
+                        class="absolute left-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">
+                        2</div>
+                    <h3 class="font-bold text-lg mb-2">Añadir Embutido</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Incorpora el chorizo troceado y el pimentón dulce. Remueve rápidamente para evitar que el
+                        pimentón se queme.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative pl-10">
+                    <div
+                        class="absolute left-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">
+                        3</div>
+                    <h3 class="font-bold text-lg mb-2">Cocer Lentejas</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Añade las lentejas (previamente lavadas) y la hoja de laurel. Cubre con agua fría (unos 3-4
+                        dedos por encima).
+                    </p>
+                </div>
+                <!-- Step 4 -->
+                <div class="relative pl-10">
+                    <div
+                        class="absolute left-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">
+                        4</div>
+                    <h3 class="font-bold text-lg mb-2">Fuego Lento</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Lleva a ebullición y luego baja el fuego. Deja cocinar tapado durante unos 30-40 minutos o hasta
+                        que estén tiernas.
+                    </p>
+                </div>
+                <!-- Step 5 -->
+                <div class="relative pl-10">
+                    <div
+                        class="absolute left-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">
+                        5</div>
+                    <h3 class="font-bold text-lg mb-2">Toque Final</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Ajusta de sal. Deja reposar 5 minutos antes de servir para que el caldo tome más cuerpo y sabor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Notes Section -->
+        <div class="bg-primary/10 border-l-4 border-primary rounded-lg p-5">
+            <div class="flex items-center mb-2">
+                <span class="material-icons text-primary mr-2">lightbulb</span>
+                <span class="font-bold text-primary">Consejo de Abuela</span>
+            </div>
+            <p class="text-sm text-slate-700 dark:text-slate-300 italic">
+                "Si prefieres un caldo más espeso, puedes triturar un par de cucharadas de lentejas con un poco de caldo
+                y volverlo a añadir a la olla al final."
+            </p>
+        </div>
+        <!-- Action Button (Mobile Fixed Alternative) -->
+        <div class="mt-10">
+            <a
+            href="./menu.html"
+                class="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
+                <span class="material-icons">play_circle</span>
+                ¡MANOS A LA COCINA!
+            </a>
+        </div>
+    </div>
+    <!-- Navigation Tab Bar (iOS Style) -->
+    <nav
+        class="block md:hidden fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-xl border-t border-slate-200 dark:border-stone-800 px-6 py-3 pb-8 z-50">
+        <div class="max-w-md mx-auto flex justify-between items-center">
+            <a class="flex flex-col items-center gap-1 group" href="index.html">
+                <span class="material-icons text-primary">home</span>
+                <span class="text-[10px] font-semibold text-primary uppercase tracking-tighter">Inicio</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500" href="./menu.html">
+                <span class="material-icons">menu_book</span>
+                <span class="text-[10px] font-semibold uppercase tracking-tighter">Recetas</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 group text-slate-400 dark:text-slate-500"
+                href="./index.html#top-3">
+                <span class="material-icons">star</span>
+                <span class="text-[10px] font-semibold uppercase tracking-tighter">Top 3</span>
+            </a>
+        </div>
+    </nav>
+</body>
+
+</html>
