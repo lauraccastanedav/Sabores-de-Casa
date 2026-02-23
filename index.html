@@ -52,7 +52,7 @@
     <!-- iOS Top Status Bar Spacer -->
     <!-- Header / Navbar -->
     <header
-        class="sticky top-0 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between border-b border-slate-200 dark:border-slate-800">
+        class="sticky top-0 z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 md:px-[10%] py-8 flex items-center justify-between border-b border-slate-200 dark:border-slate-800">
         <div class="w-full flex justify-between">
             <a class="text-xl font-bold text-primary flex items-center gap-2" href="index.html">
                 <span class="material-icons text-primary">restaurant_menu</span>
@@ -86,23 +86,25 @@
             <div
                 class="absolute inset-0 bg-gradient-to-t from-background-light dark:from-background-dark via-transparent to-transparent">
             </div>
-            <div class="absolute bottom-0 left-0 p-6 w-full">
-                <h1 class="text-3xl font-bold mb-2 text-slate-900 dark:text-white leading-tight">Bienvenido a nuestra
-                    cocina digital</h1>
-                <p class="text-sm text-slate-600 dark:text-slate-300 max-w-xs">Preservando el legado de los sabores
+            <div class="md:px-[5%] lg:px-[10%] absolute bottom-0 left-0 p-6 w-full">
+                <h1 class="text-3xl md:text-5xl font-bold mb-2 text-slate-900 dark:text-white leading-tight">Bienvenido
+                    a nuestra<br>cocina</h1>
+                <p class="text-sm md:text-xl text-slate-600 dark:text-slate-300 max-w-xs">Preservando el legado de los
+                    sabores
                     tradicionales que nos hacen sentir en casa.</p>
             </div>
         </section>
         <!-- Opening Banner -->
-        <section class="px-4">
-            <div class="md:max-w-[35%] mb-8">
+        <section class="px-4 md:px-[5%] lg:px-[10%]">
+            <div class="md:max-w-[50%] mb-8">
                 <div
                     class="bg-primary rounded-xl p-6 text-white shadow-lg shadow-primary/20 flex items-center justify-between overflow-hidden relative">
                     <div class="relative z-10">
-                        <span class="text-xs font-semibold tracking-widest uppercase opacity-80 block mb-1">Inauguración
+                        <span
+                            class="text-xs md:text-xl font-semibold tracking-widest uppercase opacity-80 block mb-1">Inauguración
                             Especial</span>
-                        <h2 class="text-2xl font-bold">Próxima apertura</h2>
-                        <p class="text-lg opacity-90">14 de febrero</p>
+                        <h2 class="text-2xl md:text-5xl font-bold">Próxima apertura</h2>
+                        <p class="text-lg md:text-2xl opacity-90">14 de febrero</p>
                     </div>
                     <div class="material-icons text-7xl opacity-20 absolute -right-2 top-2 rotate-12">calendar_today
                     </div>
@@ -111,25 +113,28 @@
         </section>
 
         <!-- Features Grid -->
-        <section class="px-4 mb-10">
+        <section class="px-4 md:px-[5%] lg:px-[10%] mb-10">
             <div class="grid grid-cols-2 gap-4">
                 <div class="bg-white dark:bg-stone-800/50 p-4 rounded-xl border border-primary/5">
                     <span class="material-icons text-primary mb-2">auto_stories</span>
-                    <h3 class="font-bold text-sm">Recetario Digital</h3>
-                    <p class="text-xs text-slate-500 mt-1">Todas las recetas de la abuela en un solo lugar.</p>
+                    <h3 class="font-bold text-sm md:text-xl">Recetario Digital</h3>
+                    <p class="text-xs md:text-[1rem] text-slate-500 mt-1">Todas las recetas de la abuela en un solo
+                        lugar.
+                    </p>
                 </div>
                 <div class="bg-white dark:bg-stone-800/50 p-4 rounded-xl border border-primary/5">
                     <span class="material-icons text-primary mb-2">history_edu</span>
-                    <h3 class="font-bold text-sm">Historia Viva</h3>
-                    <p class="text-xs text-slate-500 mt-1">Conoce el origen de cada ingrediente local.</p>
+                    <h3 class="font-bold text-sm md:text-xl">Historia Viva</h3>
+                    <p class="text-xs md:text-[1rem] text-slate-500 mt-1">Conoce el origen de cada ingrediente local.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- Top 3 Recipes Section -->
-        <section class="px-4">
+        <section class="px-4 md:px-[5%] lg:px-[10%]">
             <div class="flex items-center justify-between mb-4">
-                <h2 id="top-3" class="text-xl font-bold text-slate-900 dark:text-white">Top 3 del Mes</h2>
+                <h2 id="top-3" class="text-xl md:text-3xl font-bold text-slate-900 dark:text-white">Top 3 del Mes</h2>
                 <a class="text-primary text-sm font-semibold flex items-center" href="./menu.html">
                     Ver todas <span class="material-icons text-sm">chevron_right</span>
                 </a>
@@ -148,14 +153,15 @@
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="text-lg font-bold mb-1">Guiso de la Sierra</h3>
+                        <h3 class="text-lg md:text-2xl font-bold mb-1">Guiso de la Sierra</h3>
                         <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-2">
                             <span class="flex items-center gap-1"><span class="material-icons text-sm">timer</span> 45
                                 min</span>
                             <span class="flex items-center gap-1"><span class="material-icons text-sm">equalizer</span>
                                 Fácil</span>
                         </div>
-                        <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-2">Una receta que ha pasado de
+                        <p class="text-sm md:text-[1rem] text-slate-600 dark:text-slate-300 line-clamp-2">Una receta que
+                            ha pasado de
                             generación en generación, usando hierbas frescas de nuestro huerto.</p>
                     </div>
                 </a>
@@ -172,14 +178,15 @@
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="text-lg font-bold mb-1">Pan Artesanal de Leña</h3>
+                        <h3 class="text-lg md:text-2xl font-bold mb-1">Pan Artesanal de Leña</h3>
                         <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-2">
                             <span class="flex items-center gap-1"><span class="material-icons text-sm">timer</span> 2h
                                 30 min</span>
                             <span class="flex items-center gap-1"><span class="material-icons text-sm">equalizer</span>
                                 Media</span>
                         </div>
-                        <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-2">El secreto está en la
+                        <p class="text-sm md:text-[1rem] text-slate-600 dark:text-slate-300 line-clamp-2">El secreto
+                            está en la
                             fermentación lenta y el toque ahumado del horno tradicional.</p>
                     </div>
                 </a>
@@ -195,30 +202,35 @@
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="text-lg font-bold mb-1">Arroz con Leche Cremoso</h3>
+                        <h3 class="text-lg md:text-2xl font-bold mb-1">Arroz con Leche Cremoso</h3>
                         <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-2">
                             <span class="flex items-center gap-1"><span class="material-icons text-sm">timer</span> 35
                                 min</span>
                             <span class="flex items-center gap-1"><span class="material-icons text-sm">equalizer</span>
                                 Muy Fácil</span>
                         </div>
-                        <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-2">Dulce, suave y con ese toque
+                        <p class="text-sm md:text-[1rem] text-slate-600 dark:text-slate-300 line-clamp-2">Dulce, suave y
+                            con ese toque
                             inconfundible de canela que te transporta a tu infancia.</p>
                     </div>
                 </a>
             </div>
         </section>
         <!-- Newsletter / Footer Callout -->
-        <section class="mt-12 mx-4 p-8 bg-olive/10 dark:bg-olive/20 rounded-2xl text-center border border-olive/10">
-            <span class="material-icons text-olive text-4xl mb-3">local_florist</span>
-            <h3 class="text-xl font-bold mb-2">¿Quieres más secretos?</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Suscríbete para recibir recetas exclusivas y
-                noticias de nuestra gran apertura.</p>
-            <div class="flex justify-center">
-                <div title="saboresdecasa.newsletter.com" class="line-clamp-2 p-4 bg-primary rounded-2xl text-white">
-                    <p>saboresdecasa.newsletter.com</p>
+        <section class="px-4 md:px-[5%] lg:px-[10%]">
+            <article class="mt-12 p-8 bg-olive/10 dark:bg-olive/20 rounded-2xl text-center border border-olive/10">
+                <span class="material-icons text-olive text-4xl mb-3">local_florist</span>
+                <h3 class="text-xl md:text-3xl font-bold mb-2">¿Quieres más secretos?</h3>
+                <p class="text-sm md:text-[1rem] text-slate-600 dark:text-slate-400 mb-6">Suscríbete para recibir
+                    recetas exclusivas y
+                    noticias de nuestra gran apertura.</p>
+                <div class="flex justify-center">
+                    <div title="saboresdecasa.newsletter.com"
+                        class="line-clamp-2 p-4 bg-primary rounded-2xl text-white">
+                        <p class="md:text-[1rem]">saboresdecasa.newsletter.com</p>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
     <!-- Navigation Tab Bar (iOS Style) -->
@@ -254,11 +266,11 @@
                 </a>
             </div>
 
-            <article class="flex md:justify-evenly md:flex-row flex-col gap-4">
+            <article class="mt-8 flex md:justify-evenly md:flex-row flex-col gap-4">
                 <!-- Seccion de contacto -->
                 <section>
-                    <h5 class="text-primary text-xl font-bold">Contacto</h5>
-                    <ul class="pl-8 text-sm  list-disc line-clamp-3">
+                    <h5 class="text-primary text-xl md:text-3xl font-bold">Contacto</h5>
+                    <ul class="pl-8 text-sm md:text-[1rem] list-disc line-clamp-3">
                         <li>
                             <a href="#">contacto@saboresdecasa.com</a>
                         </li>
@@ -273,8 +285,8 @@
 
                 <!-- Seccion de recetas populares -->
                 <section>
-                    <h5 class="text-primary text-xl font-bold">Recetas Populares</h5>
-                    <ul class="text-sm pl-8 list-disc line-clamp-3">
+                    <h5 class="text-primary text-xl md:text-3xl font-bold">Recetas Populares</h5>
+                    <ul class="text-sm md:text-[1rem] pl-8 list-disc line-clamp-3">
                         <li>
                             <a href="#">Guiso de la Sierra</a>
                         </li>
@@ -288,7 +300,7 @@
                 </section>
             </article>
 
-            <div>
+            <div class="mt-8">
                 <p class="text-sm text-center text-slate-500">
                     Todos los derechos reservados | Restaurante Sabores de Casa.
                 </p>
